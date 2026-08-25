@@ -1,0 +1,161 @@
+@import "tailwindcss";
+
+:root {
+  /* =========================
+     Background
+  ========================= */
+  --background: #ffffff;
+  --surface: #ffffff;
+  --background-soft: #f3f8e8;
+
+  /* =========================
+     Text
+  ========================= */
+  --foreground: #202020;
+  --muted: #6b7280;
+  --muted-light: #9ca3af;
+
+  /* =========================
+     Brand Colors
+  ========================= */
+
+  /* Lime Green — Main Brand */
+  --primary: #96d04f;
+  --primary-dark: #6a9d2d;
+  --primary-light: #c7e99a;
+
+  /* Blue — Secondary Brand */
+  --secondary: #558ec8;
+  --secondary-dark: #243b5b;
+  --secondary-light: #a9c9e8;
+
+  /* Yellow — Accent */
+  --accent: #f4e64d;
+  --accent-dark: #d8c52d;
+
+  /* Red — Only for errors/warnings */
+  --error: #d24c3c;
+
+  /* Success */
+  --success: #4f8f45;
+
+  /* =========================
+     Borders
+  ========================= */
+  --border: #e5e7eb;
+  --border-strong: #d1d5db;
+
+  /* =========================
+     Radius
+  ========================= */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+
+  /* =========================
+     Shadows
+  ========================= */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 8px 24px rgba(36, 59, 91, 0.08);
+  --shadow-lg: 0 16px 40px rgba(36, 59, 91, 0.12);
+}
+
+@theme inline {
+  /* Background */
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-background-soft: var(--background-soft);
+
+  /* Text */
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-muted-light: var(--muted-light);
+
+  /* Brand */
+  --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
+  --color-primary-light: var(--primary-light);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-dark: var(--secondary-dark);
+  --color-secondary-light: var(--secondary-light);
+
+  --color-accent: var(--accent);
+  --color-accent-dark: var(--accent-dark);
+
+  /* Semantic */
+  --color-success: var(--success);
+  --color-error: var(--error);
+
+  /* Borders */
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+
+  /* Radius */
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+  --radius-xl: var(--radius-xl);
+
+  /* Font */
+  --font-sans: var(--font-vazirmatn);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-vazirmatn), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+::selection {
+  background: var(--primary);
+  color: #ffffff;
+}
+
+:focus-visible {
+  outline: 2px solid var(--secondary);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
