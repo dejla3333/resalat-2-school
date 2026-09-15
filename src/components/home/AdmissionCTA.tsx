@@ -1,5 +1,5 @@
+import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-import { Link } from "@/i18n/navigation";
 
 interface AdmissionCTAProps {
   title: string;
@@ -19,7 +19,6 @@ export default function AdmissionCTA({
   return (
     <section className="container pb-20 lg:pb-24">
       <div className="overflow-hidden rounded-2xl bg-[var(--primary)] px-6 py-14 text-center text-white sm:px-12">
-
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
           {title}
         </h2>
@@ -40,7 +39,6 @@ export default function AdmissionCTA({
             <ArrowLeft size={18} />
           )}
         </Link>
-
       </div>
     </section>
   );

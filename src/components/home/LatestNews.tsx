@@ -1,5 +1,6 @@
+
 import { ArrowUpLeft, CalendarDays } from "lucide-react";
-import { Link } from "@/i18n/navigation";
+import Link from "next/link";
 
 interface NewsItem {
   title: string;
@@ -23,7 +24,6 @@ export default function LatestNews({
 }: LatestNewsProps) {
   return (
     <section className="container py-20 lg:py-24">
-
       <div className="flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
         <div>
           <p className="text-sm font-semibold text-[var(--accent)]">
@@ -86,7 +86,6 @@ export default function LatestNews({
           </article>
         ))}
       </div>
-
     </section>
   );
 }
