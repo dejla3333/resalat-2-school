@@ -1,28 +1,22 @@
-import {
-  Mail,
-  MapPin,
-  Phone,
-} from "lucide-react";
-
-import { Container } from "@/components/ui/container";
-import { title } from "process";
+import { Mail, MapPin, Phone } from "lucide-react";
 
 const contactItems = [
   {
     icon: Phone,
     title: "شماره تماس رسمی مکتب",
     value: "079315200",
+    href: "tel:079315200",
   },
   {
     icon: Mail,
     title: "ایمیل",
     value: "resalat2school@example.com",
-    href: "mailto:info@example.com",
+    href: "mailto:resalat2school@example.com",
   },
   {
     icon: MapPin,
     title: "آدرس",
-    value: "آدرس رسمی مکتب",
+    value: "دولتخانه، کنار زیارت، هرات، افغانستان",
   },
 ];
 

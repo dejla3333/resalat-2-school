@@ -1,3 +1,5 @@
+import { SiteShell } from "@/components/layout/site-shell";
+
 import { Hero } from "@/components/home/Hero";
 import { Stats } from "@/components/home/stats";
 import { AboutPreview } from "@/components/home/AboutPreview";
@@ -9,22 +11,15 @@ import { FinalCTA } from "@/components/home/final-cta";
 
 export default function Home() {
   return (
-    <>
+    <SiteShell>
       <Hero />
-
       <Stats />
-
       <AboutPreview />
-
       <AcademicAreas />
-
       <FeaturedNews />
-
       <UpcomingEvents />
-
       <GalleryPreview />
-
       <FinalCTA />
-    </>
+    </SiteShell>
   );
 }

@@ -27,8 +27,7 @@ export function Footer() {
           {/* Brand */}
           <div className="max-w-md">
             <Link
-              href="/"
-              className="inline-flex items-center gap-3"
+              href="/6064654879390634451_121.jpg"              className="inline-flex items-center gap-3"
             >
               <span className="flex size-10 items-center justify-center bg-primary text-lg font-bold text-white">
                 ر
@@ -52,7 +51,7 @@ export function Footer() {
 
             {/* Telegram */}
             <a
-              href="https://t.me/your_channel"
+              href="https://t.me/resalat_2_wd"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-7 inline-flex items-center gap-2 text-sm font-medium text-white/75 transition-colors hover:text-primary"
@@ -84,17 +83,17 @@ export function Footer() {
             <div className="mt-6 space-y-5">
               <ContactItem
                 icon={<Phone size={16} strokeWidth={1.8} />}
-                text="شماره تماس: در حال تکمیل"
+                text="079315200"
               />
 
               <ContactItem
                 icon={<Mail size={16} strokeWidth={1.8} />}
-                text="ایمیل: در حال تکمیل"
+                text="resalat2school@gmail.com"
               />
 
               <ContactItem
                 icon={<MapPin size={16} strokeWidth={1.8} />}
-                text="آدرس: در حال تکمیل"
+                text="دولتخانه، کنار زیارت، هرات، افغانستان"
               />
             </div>
           </div>

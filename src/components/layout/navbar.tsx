@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ArrowLeft } from "lucide-react";
 import { MobileMenu } from "./mobile-menu";
 
 const navigation = [
@@ -82,8 +82,35 @@ export function Navbar() {
             ))}
           </div>
 
-          {/* Contact */}
-          <div className="hidden lg:block">
+          {/* Actions */}
+          <div className="hidden items-center gap-3 lg:flex">
+            {/* Login / Portal */}
+            <Link
+              href="/login"
+              className={[
+                "group inline-flex min-h-11 items-center justify-center gap-2",
+                "rounded-[var(--radius-md)]",
+                "border border-primary/20",
+                "bg-white/80 px-4",
+                "text-sm font-medium text-primary-dark",
+                "shadow-sm",
+                "transition-all duration-200",
+                "hover:-translate-y-0.5",
+                "hover:border-primary/40",
+                "hover:bg-primary/5",
+                "hover:shadow-md",
+              ].join(" ")}
+            >
+              <span>ورود به سامانه</span>
+
+              <ArrowLeft
+                size={16}
+                aria-hidden="true"
+                className="transition-transform duration-200 group-hover:-translate-x-1"
+              />
+            </Link>
+
+            {/* Contact */}
             <Link
               href="/contact"
               className="inline-flex min-h-11 items-center justify-center rounded-[var(--radius-md)] bg-secondary px-5 text-sm font-medium text-white shadow-sm transition-all duration-200 hover:bg-secondary-dark hover:shadow-md"

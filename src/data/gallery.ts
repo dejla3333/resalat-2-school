@@ -40,7 +40,7 @@ export const galleryItems: GalleryItem[] = [
     id: 6,
     title: "فعالیت گروهی",
     category: "پروژه‌های دانش‌آموزی",
-    image: "/images/gallery/gallery-06.jpg",
+    image: "/6300672235773039773_121.jpg",
   },
 ];
 

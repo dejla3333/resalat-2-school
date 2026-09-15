@@ -17,7 +17,7 @@ export function DirectorMessage() {
 
           <div className="mt-8">
             <p className="font-semibold">
-          +
+          وحید دانش
             </p>
 
             <p className="mt-1 text-sm text-muted">

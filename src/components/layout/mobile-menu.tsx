@@ -76,7 +76,7 @@ export function MobileMenu({
             </Link>
 
             <a
-              href="https://t.me/your_channel"
+              href="https://t.me/resalat_2_wd"
               target="_blank"
               rel="noopener noreferrer"
               onClick={onClose}
